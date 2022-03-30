@@ -18,7 +18,7 @@ export default function Home() {
 
         <p className={styles.description}>
           Get started by editing{' '}
-          <code className={styles.code}>pages/index.js and apple</code>
+          <code className={styles.code}>pages/index.js and apple and hello บักจิ</code>
         </p>
 
         <div className={styles.grid}>
