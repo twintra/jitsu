@@ -1,0 +1,57 @@
+import { Grid, Typography, Button } from '@mui/material'
+
+export default function Home() {
+
+    return (
+
+        <Grid
+            container
+            style={{ minHeight: '85vh' }}
+        >
+            <Grid item xs sm={6}>
+                <Grid container direction="column" alignItems="center" justifyContent="center" justify="center" height="100%" sx={{ height: "100%" }}>
+                    Picture here
+                </Grid>
+            </Grid>
+            <Grid item xs sm={6}>
+                <Grid container direction="column" alignItems="center" justifyContent="center" justify="center" height="100%" sx={{ height: "100%" }}>
+
+                    <Typography
+                        sx={{
+                            // textDecoration: 'underline',
+                            color: "#252629",
+                            fontWeight: "bold",
+                            fontSize: 40
+                        }}
+                    >
+                        Ori-JITSU CLUTCH BAG
+                    </Typography>
+                    <Button
+                        variant="contained"
+                        sx={{
+                            marginTop:"30px",
+                            padding: "15px",
+                            borderRadius: "0px",
+                            color: "#FFFFFF",
+                            backgroundColor: "#252629",
+                            ":hover": {
+                                backgroundColor: "#000000"
+                            }
+                        }}
+                    >
+                        <Typography sx={{
+                            // textDecoration: 'underline',
+                            // color: "#E5E9E8",
+                            fontWeight: "bold",
+                            fontSize: 20
+                        }}>
+                            ORDER NOW
+                        </Typography>
+                    </Button>
+                </Grid>
+            </Grid>
+
+
+        </Grid>
+    )
+}
