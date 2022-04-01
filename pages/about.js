@@ -37,7 +37,7 @@ export default function About() {
 
 
                     <svg width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'>
-                        <line x1="30" y1="80" x2="70" y2="20" vectorEffect="non-scaling-stroke" stroke="#9E4A40" strokeWidth={"3px"} />
+                        <line x1="30" y1="80" x2="70" y2="20" stroke="#9E4A40" strokeWidth={"3px"} />
                     </svg>
 
                 </Grid>
