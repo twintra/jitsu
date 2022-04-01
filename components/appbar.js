@@ -8,7 +8,7 @@ export default function Appbar({ children }) {
             style={{
                 // backgroundColor: "RED",
                 paddingTop: "50px",
-                paddingBottom: "50px",
+                paddingBottom: "0px",
             }} >
 
             <Grid item xs sm={5} style={{ paddingLeft: "5vw" }}>
