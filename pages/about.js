@@ -36,9 +36,9 @@ export default function About() {
                 <Grid container direction="column" alignItems="center" justifyContent="center" justify="center" height="100%" sx={{ height: "100%" }}>
 
 
-                    <svg width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'>
+                    {/* <svg width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'>
                         <line x1="30" y1="80" x2="70" y2="20" vectorEffect="non-scaling-stroke" stroke="#9E4A40" strokeWidth={"3px"} />
-                    </svg>
+                    </svg> */}
 
                 </Grid>
             </Grid>
