@@ -37,7 +37,7 @@ export default function About() {
 
 
                     <svg width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'>
-                        <line x1="30" y1="80" x2="70" y2="20" stroke="#9E4A40" strokeWidth={"3px"} />
+                        <line x1="30" y1="80" x2="70" y2="20" vectorEffect="non-scaling-stroke" stroke="#9E4A40" strokeWidth={"3px"} />
                     </svg>
 
                 </Grid>
@@ -52,7 +52,7 @@ export default function About() {
                                 <Typography  >
 
 
-                                    {'\t'}อัตลักษณ์ของแบรนด์ได้รับแรงบันดาลใจ
+                                    อัตลักษณ์ของแบรนด์ได้รับแรงบันดาลใจ
                                     มาจากความสนใจในวิถีนินจา ในปัจจุบันวิถี
                                     นินจาหรือนินจาที่มีอยู่จริง นั้นเริ่มจางหายไป
                                     เนื่องจากความก้าวหน้าของเศรษฐกิจ สังคม
