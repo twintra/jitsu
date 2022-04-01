@@ -20,7 +20,7 @@ export default function About() {
                         <Box width={"100%"}>
                             <Typography sx={{ whiteSpace: 'pre-line' }}>
 
-                                แบรนด์ "จิตสุ" ได้ก่อตั้งขึ้นมาเนื่องจากได้
+                                แบรนด์ &quot;จิตสุ&quot; ได้ก่อตั้งขึ้นมาเนื่องจากได้
                                 พบปัญหาความประมาทที่อยู่ในจิตใจหรือความคิด
                                 ของกลุ่มวัยรุ่นและวัยทำงาน ซึ่งส่งผลกระทบต่อชีวิต
                                 ประจำวันอยู่เสมอ ทางแบรนด์จึงได้ศึกษาแนวคิดที่
@@ -36,9 +36,9 @@ export default function About() {
                 <Grid container direction="column" alignItems="center" justifyContent="center" justify="center" height="100%" sx={{ height: "100%" }}>
 
 
-                    {/* <svg width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'>
+                    <svg width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'>
                         <line x1="30" y1="80" x2="70" y2="20" vectorEffect="non-scaling-stroke" stroke="#9E4A40" strokeWidth={"3px"} />
-                    </svg> */}
+                    </svg>
 
                 </Grid>
             </Grid>
