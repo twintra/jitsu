@@ -1,7 +1,6 @@
 import { Grid, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Head from 'next/head'
-import styles from '../styles/Index.module.css'
 
 export default function About() {
     return (
@@ -10,7 +9,7 @@ export default function About() {
             container
             style={{ minHeight: '85vh' }}
         >
-            <Grid item styles={{ backgroundColor: "red" }} xs sm={5}>
+            <Grid item xs sm={5}>
                 <Grid container direction="column" alignItems="end" justifyContent="center" height="100%" sx={{ height: "100%" }}>
 
                     <Grid container alignItems="center" justifyContent="center" direction={"column"} width="50%">
@@ -33,24 +32,24 @@ export default function About() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item styles={{ backgroundColor: "red" }} xs sm={2}>
-                <Grid container direction="column" alignItems="center" justifyContent="center" justify="center" height="100%" sx={{ height: "100%" }} style={{ backgroundColor: "" }}>
+            <Grid item  xs sm={2}>
+                <Grid container direction="column" alignItems="center" justifyContent="center" justify="center" height="100%" sx={{ height: "100%" }}>
 
 
                     <svg width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'>
-                        <line x1="30" y1="80" x2="70" y2="20" vector-effect="non-scaling-stroke" stroke="#9E4A40" strokeWidth={"3px"} />
+                        <line x1="30" y1="80" x2="70" y2="20" vectorEffect="non-scaling-stroke" stroke="#9E4A40" strokeWidth={"3px"} />
                     </svg>
 
                 </Grid>
             </Grid>
-            <Grid item styles={{ backgroundColor: "red" }} xs sm={5}>
+            <Grid item  xs sm={5}>
                 <Grid container direction="column" alignItems="start" justifyContent="center" height="100%" sx={{ height: "100%" }}>
 
-                    <Grid container alignItems="center" justifyContent="center" direction={"column"} width="50%">
+                    <Grid container alignItems="center" justifyContent="center" direction="column" width="50%">
 
                         <Grid item sm={8}>
                             <Box marginBottom={"5vh"}>
-                                <Typography paragraph={true} text >
+                                <Typography  >
 
 
                                     {'\t'}อัตลักษณ์ของแบรนด์ได้รับแรงบันดาลใจ

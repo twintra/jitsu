@@ -54,7 +54,7 @@ export default function Product() {
             <Grid container direction="row" style={{ backgroundColor: "#FAFDB6" }}>
                 {dataList.map((value, index) => {
                     return (
-                        <Grid item>
+                        <Grid item key={index}>
 
                             <Grid container dirention="row">
                                 <Grid item xs sx={{ padding: "10px" }}>
