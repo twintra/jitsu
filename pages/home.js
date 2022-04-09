@@ -1,4 +1,5 @@
 import { Grid, Typography, Button } from '@mui/material'
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -26,28 +27,30 @@ export default function Home() {
                     >
                         Ori-JITSU CLUTCH BAG
                     </Typography>
-                    <Button
-                        variant="contained"
-                        sx={{
-                            marginTop:"30px",
-                            padding: "15px",
-                            borderRadius: "0px",
-                            color: "#FFFFFF",
-                            backgroundColor: "#252629",
-                            ":hover": {
-                                backgroundColor: "#000000"
-                            }
-                        }}
-                    >
-                        <Typography sx={{
-                            // textDecoration: 'underline',
-                            // color: "#E5E9E8",
-                            fontWeight: "bold",
-                            fontSize: 20
-                        }}>
-                            ORDER NOW
-                        </Typography>
-                    </Button>
+                    <Link href={`/product/001`}>
+                        <Button
+                            variant="contained"
+                            sx={{
+                                marginTop: "30px",
+                                padding: "15px",
+                                borderRadius: "0px",
+                                color: "#FFFFFF",
+                                backgroundColor: "#252629",
+                                ":hover": {
+                                    backgroundColor: "#000000"
+                                }
+                            }}
+                        >
+                            <Typography sx={{
+                                // textDecoration: 'underline',
+                                // color: "#E5E9E8",
+                                fontWeight: "bold",
+                                fontSize: 20
+                            }}>
+                                ORDER NOW
+                            </Typography>
+                        </Button>
+                    </Link>
                 </Grid>
             </Grid>
 
