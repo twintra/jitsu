@@ -92,7 +92,7 @@ const Item = () => {
                                 Bag Picture
                             </Grid>
                             <Grid item sx={{ marginTop: "30px" }}>
-                                {bag_item.name && ""}
+                                {bag_item.name }
                             </Grid>
                             <Grid item>
                                 Price : {bag_item.price} ฿
@@ -154,7 +154,7 @@ const Item = () => {
                         <Grid container direction="column" alignItems="center" >
 
                             <Grid item sx={{ marginTop: "30px" }}>
-                                {bag_item.name && ""} {itemCount} piece
+                                {bag_item.name} {itemCount} piece
                             </Grid>
                             <Grid item>
                                 Total Price : {bag_item.price * itemCount} ฿
