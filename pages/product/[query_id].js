@@ -123,7 +123,7 @@ const Item = () => {
 
 
                     </Grid>
-                    <Link href={"/product"}>
+                    <Link href={"/product"} passHref>
                         <Grid item >
 
                             <Button

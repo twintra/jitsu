@@ -37,7 +37,7 @@ export default function Product() {
                                 </Grid>
                                 <Grid item>
                                     
-                                    <Link href={`/product/${value.id}`}>
+                                    <Link href={`/product/${value.id}`} passHref>
 
                                         <Button
                                             variant="contained"
