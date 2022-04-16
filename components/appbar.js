@@ -15,17 +15,6 @@ export default function Appbar({ children }) {
     const tabsListName = ["About", "Product", "News", "Join Us"];
     const [tab, setTab] = useState(`${currentTab}`);
 
-
-
-    const LogoButton = React.forwardRef(({ onClick, href }, ref) => {
-        return (
-            <a href={href} onClick={onClick} ref={ref}>
-                <Image src={"/MAINLOGO_Horizontal_1200x630.png"} width={1200 * logoSizeRatio} height={630 * logoSizeRatio} />
-
-            </a>
-        )
-    })
-
     const handleClickTab = (value) => {
         setTab(value)
 
@@ -44,9 +33,9 @@ export default function Appbar({ children }) {
             <Grid item xs sm={5} style={{ paddingLeft: "5vw" }}>
 
                 <Link href={"/home"} passHref>
-
-                    <LogoButton />
-
+                    <a href={href} onClick={()=>handleClickTab("")}>
+                        <Image src={"/MAINLOGO_Horizontal_1200x630.png"} width={1200 * logoSizeRatio} height={630 * logoSizeRatio} />
+                    </a>
 
                 </Link>
 

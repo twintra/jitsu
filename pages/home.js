@@ -28,7 +28,7 @@ export default function Home() {
                         >
                             Ori-JITSU CLUTCH BAG
                         </Typography>
-                        <Link href={`/product/001`}>
+                        <Link href={`/product/001`} passHref>
                             <Button
                                 variant="contained"
                                 sx={{
