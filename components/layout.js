@@ -1,4 +1,5 @@
 import { Container, Grid } from "@mui/material";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import Appbar from "./appbar";
 import Footer from "./footer";

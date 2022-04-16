@@ -1,4 +1,4 @@
-import { Button, Divider, Grid, IconButton, Typography } from '@mui/material'
+import { Button, Divider, Fade, Grid, IconButton, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Head from 'next/head'
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -18,13 +18,13 @@ export default function Product() {
 
                             <Grid container direction={"column"} >
                                 <Grid item>
-                                    <Typography sx={{ zIndex: 10, position: "absolute" }}>
+                                    <Typography fontFamily="K2D" sx={{ zIndex: 10, position: "absolute" }}>
                                         <IconButton sx={{ backgroundColor: "#E5E9E7" }}>
 
                                             <FavoriteIcon sx={{ color: "#923F38" }} />
                                         </IconButton>
                                     </Typography>
-                                    <Typography sx={{ zIndex: 0 }}>
+                                    <Typography fontFamily="K2D" sx={{ zIndex: 0 }}>
 
                                     </Typography>
                                     Bag Picture
@@ -36,7 +36,7 @@ export default function Product() {
                                     Price : {value.price} ฿
                                 </Grid>
                                 <Grid item>
-                                    
+
                                     <Link href={`/product/${value.id}`} passHref>
 
                                         <Button
@@ -54,12 +54,15 @@ export default function Product() {
                                             }}
 
                                         >
-                                            <Typography sx={{
-                                                // textDecoration: 'underline',
-                                                // color: "#E5E9E8",
-                                                fontWeight: "bold",
-                                                fontSize: 15
-                                            }}>
+                                            <Typography
+                                                sx={{
+                                                    // textDecoration: 'underline',
+                                                    // color: "#E5E9E8",
+                                                    fontWeight: "bold",
+                                                    fontSize: 15
+                                                }}
+                                                fontFamily="K2D"
+                                            >
                                                 Order now
                                             </Typography>
                                         </Button>
@@ -95,37 +98,39 @@ export default function Product() {
 
 
     return (
+        <Fade in={true}>
 
-        <Grid
-            container
-            style={{ minHeight: '85vh', paddingTop: "50px", paddingLeft: "10%", paddingRight: "10%" }}
-            direction="column"
+            <Grid
+                container
+                style={{ minHeight: '85vh', paddingTop: "50px", paddingLeft: "10%", paddingRight: "10%" }}
+                direction="column"
 
-            justifyContent="center"
+                justifyContent="center"
 
-        >
-            <Box sx={{
-                maxWidth: "140px",
-                padding: "10px",
-                borderRadius: 20,
-                marginBottom: "50px",
-                border: 0.5,
-            }} >
-                <Grid container alignItems="center" justifyContent="center" >
+            >
+                <Box sx={{
+                    maxWidth: "140px",
+                    padding: "10px",
+                    borderRadius: 20,
+                    marginBottom: "50px",
+                    border: 0.5,
+                }} >
+                    <Grid container alignItems="center" justifyContent="center" >
 
-                    <Typography sx={{ fontSize: 20, fontWeight: "bold" }}>
+                        <Typography sx={{ fontSize: 20, fontWeight: "bold" }} fontFamily="K2D">
 
-                        PRODUCT
-                    </Typography>
+                            PRODUCT
+                        </Typography>
+                    </Grid>
+                </Box>
+                <Grid container direction="row" >
+
+                    {createItemList()}
+
                 </Grid>
-            </Box>
-            <Grid container direction="row" >
-
-                {createItemList()}
 
             </Grid>
-
-        </Grid>
+        </Fade>
     )
 
 
