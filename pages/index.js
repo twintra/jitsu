@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material'
+import { Fade, Grid } from '@mui/material'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -6,6 +6,7 @@ import Image from 'next/image'
 export default function Home() {
   const logoSizeRatio = 0.7;
   return (
+    
     <Fade in={true}>
       <Grid container
         spacing={0}
