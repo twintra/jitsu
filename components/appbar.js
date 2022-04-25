@@ -20,6 +20,8 @@ export default function Appbar({ children }) {
 
     }
 
+
+
     return (
         <Grid container
             direction={"row"}
@@ -33,7 +35,7 @@ export default function Appbar({ children }) {
             <Grid item xs sm={5} style={{ paddingLeft: "5vw" }}>
 
                 <Link href={"/home"} passHref>
-                    <a href={href} onClick={()=>handleClickTab("")}>
+                    <a href={href} onClick={() => handleClickTab("")}>
                         <Image src={"/MAINLOGO_Horizontal_1200x630.png"} width={1200 * logoSizeRatio} height={630 * logoSizeRatio} />
                     </a>
 
@@ -82,7 +84,7 @@ export default function Appbar({ children }) {
                             </Link>
                         )
                     })}
-                    <Grid item xs justifyContent={"center"}>
+                    <Grid item xs justifyContent={"center"} >
                         <Link href={`/product`} passHref >
                             <Box
                                 onClick={() => handleClickTab("product")}
@@ -104,12 +106,33 @@ export default function Appbar({ children }) {
                                         ORDER
                                     </Typography>
 
+
+
                                 </Grid>
 
 
 
+
+
                             </Box>
+
                         </Link>
+                        <Box sx={{
+                            
+                            
+                            
+                                                        
+                            position: "relative",
+                            top:-10,
+                            right:"0%",
+                            left: "70%",
+                            zIndex: "modal"
+                        }} >
+
+                            <Image src={"/assets/shopping-basket.png"} width={30} height={30} />
+
+                        </Box>
+
                     </Grid>
 
                     <Grid item xs style={{ padding: "5px", paddingLeft: "40px" }}>

@@ -9,6 +9,12 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Link from 'next/link';
 import PaymentIcon from '@mui/icons-material/Payment';
 import CircleIcon from '@mui/icons-material/Circle';
+import Image from 'next/image';
+
+import { createTheme } from '@mui/material/styles';
+
+
+
 
 const PayMethod = {
     creditCard: "creditCard",
@@ -42,9 +48,6 @@ const Item = () => {
     const handleRadioChange = (event) => {
         setSelectedPayMethod(event.target.value);
     }
-
-
-
 
     return (
         <Fade in={true}>
@@ -85,73 +88,105 @@ const Item = () => {
                             </Typography>
                         </Grid>
                     </Box>
-                    <Grid container direction="row" >
-                        <Grid item xs >
-                            <Grid container direction="column" alignItems="center"  >
-                                <Grid item>
+                    <Grid container direction="row" justifyContent={"center"} sx={{ width: "100%" }}>
+                        <Grid item sm={5} sx={{ padding: "50px" }} >
+                            <Grid container alignItems={"end"}>
+
+                                <Grid container direction="column" alignItems="center"  >
+                                    <Grid item>
 
 
-                                    Bag Picture
-                                </Grid>
-                                <Grid item sx={{ marginTop: "30px" }}>
-                                    {bag_item.name}
-                                </Grid>
-                                <Grid item>
-                                    Price : {bag_item.price} ฿
-                                </Grid>
-                                <Grid item>
-                                    <Grid container direction={"row"} alignItems="center"  >
-                                        <Grid item>
-                                            Amount :
-                                        </Grid>
-                                        <Grid item>
-                                            <Grid container direction={"column"} alignItems="center" justifyContent="center" >
-                                                <Grid item>
-                                                    <IconButton onClick={clickIncrease} sx={{ padding: 0 }}>
-                                                        <ArrowDropUpIcon fontSize='large' />
-                                                    </IconButton>
-
-                                                </Grid>
-                                                <Grid item>
-                                                    {itemCount}
-
-                                                </Grid>
-                                                <Grid item>
-                                                    <IconButton onClick={clickDecrease} sx={{ padding: 0 }}>
-                                                        <ArrowDropDownIcon fontSize='large' />
-                                                    </IconButton>
-
-                                                </Grid>
+                                        Bag Picture
+                                    </Grid>
+                                    <Grid item sx={{ marginTop: "30px" }}>
+                                        {bag_item.name}
+                                    </Grid>
+                                    <Grid item>
+                                        Price : {bag_item.price} ฿
+                                    </Grid>
+                                    <Grid item>
+                                        <Grid container direction={"row"} alignItems="center"  >
+                                            <Grid item>
+                                                Amount :
                                             </Grid>
+                                            <Grid item>
+                                                <Grid container direction={"column"} alignItems="center" justifyContent="center" >
+                                                    <Grid item>
+                                                        <IconButton onClick={clickIncrease} sx={{ padding: 0 }}>
+                                                            <ArrowDropUpIcon fontSize='large' />
+                                                        </IconButton>
 
-                                        </Grid>
-                                        <Grid item>
-                                            Piece(s)
+                                                    </Grid>
+                                                    <Grid item>
+                                                        {itemCount}
+
+                                                    </Grid>
+                                                    <Grid item>
+                                                        <IconButton onClick={clickDecrease} sx={{ padding: 0 }}>
+                                                            <ArrowDropDownIcon fontSize='large' />
+                                                        </IconButton>
+
+                                                    </Grid>
+                                                </Grid>
+
+                                            </Grid>
+                                            <Grid item>
+                                                Piece(s)
+                                            </Grid>
                                         </Grid>
                                     </Grid>
+
+
                                 </Grid>
+                                <Link href={"/product"} passHref>
+                                    <Grid item >
+                                        <Box sx={{ display: 'inline-flex' }}>
+                                            <Grid container direction={"column"}>
+
+                                                <Button
 
 
+                                                    sx={{ color: "#000000", p: "2px" }}
+                                                >
+
+                                                    <Typography fontFamily="K2D">
+
+
+                                                        Shop more
+
+
+                                                    </Typography>
+
+                                                </Button>
+
+                                                <Divider display="inline" sx={{ bgcolor: "#923F38", borderBottomWidth: 2 }} />
+                                                <Box sx={{
+
+
+
+
+                                                    position: "relative",
+                                                    top: -2,
+                                                    right: "20%",
+                                                    // bottom: -30,
+                                                    left: "70%",
+                                                    // zIndex: "modal"
+                                                }} >
+
+                                                    <Image src={"/assets/shopping-basket.png"} width={30} height={30} />
+
+                                                </Box>
+                                            </Grid>
+                                        </Box>
+
+                                    </Grid>
+                                </Link>
                             </Grid>
-                            <Link href={"/product"} passHref>
-                                <Grid item >
-
-                                    <Button
-                                        sx={{ color: "#000000", }}
-                                    >
-
-                                        <Typography fontFamily="K2D">
-                                            Shop more
-
-                                        </Typography>
-                                    </Button>
-                                </Grid>
-                            </Link>
 
                         </Grid>
 
                         <Divider orientation='vertical' flexItem />
-                        <Grid item xs>
+                        <Grid item sm={5} sx={{ padding: "50px"}}>
 
                             <Grid container direction="column" alignItems="center" >
 
@@ -165,7 +200,7 @@ const Item = () => {
 
 
                             </Grid>
-                            <Grid container direction={"column"} alignItems="start">
+                            <Grid container direction={"column"} alignItems="center">
                                 <Grid item>
                                     <Grid container direction={"row"} alignItems="center" >
                                         <Box sx={{

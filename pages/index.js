@@ -16,7 +16,7 @@ export default function Home() {
         style={{ minHeight: '100vh' }}
       >
         <Grid item xs={3}>
-          <Link href="/home">
+          <Link href="/home" passHref>
             <Image src={"/MAINLOGO_Vertical_630x1200.png"} width={630 * logoSizeRatio} height={1200 * logoSizeRatio} />
           </Link>
         </Grid>
