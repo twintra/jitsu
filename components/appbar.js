@@ -47,8 +47,8 @@ export default function Appbar({ children }) {
                 <Grid container justifyContent={"center"}  >
                     {tabsList.map((value, index) => {
                         return (
-                            <Grid item xs>
-                                <Link key={index} href={`/${value}`} passHref >
+                            <Grid item xs key={index} >
+                                <Link  href={`/${value}`} passHref >
                                     <Grid
                                         style={{ paddingTop: "5px" }}
                                         item
