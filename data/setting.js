@@ -1,3 +1,3 @@
 const setting={
-    fontFamily:"K2D",
+    fontFamily:"Zen+Antique",
 }

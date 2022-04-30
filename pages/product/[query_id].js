@@ -82,7 +82,7 @@ const Item = () => {
                     }} >
                         <Grid container alignItems="center" justifyContent="center" >
 
-                            <Typography sx={{ fontSize: 20, fontWeight: "bold", color: "#A9937C" }} fontFamily="K2D">
+                            <Typography sx={{ fontSize: 20, fontWeight: "bold", color: "#A9937C" }} fontFamily="Zen+Antique">
 
                                 YOUR ORDER
                             </Typography>
@@ -149,7 +149,7 @@ const Item = () => {
                                                     sx={{ color: "#000000", p: "2px" }}
                                                 >
 
-                                                    <Typography fontFamily="K2D">
+                                                    <Typography fontFamily="Zen+Antique">
 
 
                                                         Shop more
@@ -213,7 +213,7 @@ const Item = () => {
                                         }} >
 
 
-                                            <Typography fontFamily="K2D" sx={{ fontSize: 20, fontWeight: "bold", color: "#E5E9E7" }}>
+                                            <Typography fontFamily="Zen+Antique" sx={{ fontSize: 20, fontWeight: "bold", color: "#E5E9E7" }}>
 
                                                 Payment Method
                                             </Typography>
@@ -304,7 +304,7 @@ const Item = () => {
                             }} >
 
 
-                                <Typography fontFamily="K2D" sx={{ fontSize: 20, fontWeight: "bold", color: "#E5E9E7" }}>
+                                <Typography fontFamily="Zen+Antique" sx={{ fontSize: 20, fontWeight: "bold", color: "#E5E9E7" }}>
 
                                     Order Confirm
                                 </Typography>

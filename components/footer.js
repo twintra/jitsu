@@ -16,7 +16,7 @@ export default function Footer({ children }) {
                                 color: "#E5E9E8",
                                 fontWeight: "bold"
                             }}
-                            fontFamily="K2D"
+                            fontFamily="Zen+Antique"
                             >
                                 Contract
                             </Typography>
@@ -31,7 +31,7 @@ export default function Footer({ children }) {
                                     </Link>
                                 </Grid>
 
-                                <Typography color="#E5E9E8" fontFamily="K2D">
+                                <Typography color="#E5E9E8" fontFamily="Zen+Antique">
                                     <Link href={"/faq"}>
 
                                         Jitsu.com
@@ -46,7 +46,7 @@ export default function Footer({ children }) {
                                         Facebook LOGO HERE
                                     </Link>
                                 </Grid>
-                                <Typography color="#E5E9E8" fontFamily="K2D">
+                                <Typography color="#E5E9E8" fontFamily="Zen+Antique">
                                     <Link href={"/faq"}>
                                         Jitsu
                                     </Link>
@@ -58,7 +58,7 @@ export default function Footer({ children }) {
                                         Instagram LOGO HERE
                                     </Link>
                                 </Grid>
-                                <Typography color="#E5E9E8" fontFamily="K2D">
+                                <Typography color="#E5E9E8" fontFamily="Zen+Antique">
                                     <Link href={"/faq"}>
                                         jitsu.official
                                     </Link>
@@ -73,7 +73,7 @@ export default function Footer({ children }) {
                 <Grid container direction="column" alignItems="center" justify="center">
 
                     <Typography
-                        fontFamily="K2D"
+                        fontFamily="Zen+Antique"
                         sx={{
                             textDecoration: 'underline',
                             color: "#E5E9E8",

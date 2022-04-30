@@ -47,41 +47,44 @@ export default function Appbar({ children }) {
                 <Grid container justifyContent={"center"}  >
                     {tabsList.map((value, index) => {
                         return (
-                            <Link key={index} href={`/${value}`} passHref >
-                                <Grid
-                                    style={{ paddingTop: "5px" }}
-                                    item
-                                    xs
-                                    onClick={() => handleClickTab(value)}
-                                    sx={{
-                                        ":hover": {
-                                            cursor: "pointer"
-                                        },
+                            <Grid item xs>
+                                <Link key={index} href={`/${value}`} passHref >
+                                    <Grid
+                                        style={{ paddingTop: "5px" }}
+                                        item
+                                        xs
+                                        onClick={() => handleClickTab(value)}
+                                        sx={{
+                                            ":hover": {
+                                                cursor: "pointer"
+                                            },
 
-                                        borderBottom: value === tab ? 3 : 0,
-                                        alignItems: "center",
-                                        justifyContent: "center",
-                                        paddingBottom: "10px",
-                                        marginLeft: "10px",
-                                        marginRight: "10px",
-                                        transition: (theme) => theme.transitions.create("all", {
-                                            duration: theme.transitions.duration.short
-                                        })
-                                    }}
+                                            borderBottom: value === tab ? 3 : 0,
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            paddingBottom: "10px",
+                                            marginLeft: "10px",
+                                            marginRight: "10px",
+                                            transition: (theme) => theme.transitions.create("all", {
+                                                duration: theme.transitions.duration.short
+                                            })
+                                        }}
 
-                                >
-                                    <Grid container justifyContent={"center"}  >
-
-
-                                        <Typography display="inline" fontFamily="K2D">
-                                            {tabsListName[index]}
-
-                                        </Typography>
+                                    >
+                                        <Grid container justifyContent={"center"}  >
 
 
+                                            <Typography display="inline" fontFamily="Zen+Antique">
+                                                {tabsListName[index]}
+
+                                            </Typography>
+
+
+                                        </Grid>
                                     </Grid>
-                                </Grid>
-                            </Link>
+                                </Link>
+                            </Grid>
+
                         )
                     })}
                     <Grid item xs justifyContent={"center"} >
@@ -101,7 +104,7 @@ export default function Appbar({ children }) {
                                 }}
                             >
                                 <Grid container alignItems={"center"} justifyContent="center">
-                                    <Typography fontFamily="K2D" color={"#E5E9E7"} >
+                                    <Typography fontFamily="Zen+Antique" color={"#E5E9E7"} >
 
                                         ORDER
                                     </Typography>
@@ -118,13 +121,13 @@ export default function Appbar({ children }) {
 
                         </Link>
                         <Box sx={{
-                            
-                            
-                            
-                                                        
+
+
+
+
                             position: "relative",
-                            top:-10,
-                            right:"0%",
+                            top: -10,
+                            right: "0%",
                             left: "70%",
                             zIndex: "modal"
                         }} >
