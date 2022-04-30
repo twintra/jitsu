@@ -10,8 +10,8 @@ import { borderBottom, Box, useTheme } from '@mui/system';
 export default function Appbar({ children }) {
     const href = useRouter().pathname;
     const hrefList = href.split("/")
-    const currentTab = hrefList[hrefList.length-1];
-    
+    const currentTab = hrefList[hrefList.length - 1];
+
     const logoSizeRatio = 0.2;
     const tabsList = ["about", "product", "news", "join_us"];
     const tabsListName = ["About", "Product", "News", "Join Us"];
@@ -36,21 +36,27 @@ export default function Appbar({ children }) {
 
             <Grid item xs sm={5} style={{ paddingLeft: "5vw" }}>
 
-                <Link href={"/home"} passHref>
-                    <a href={href} onClick={() => handleClickTab("")}>
+                {/* <Link href={"/home"} passHref>
+                    <a href={href} onClick={() => handleClickTab("")}> */}
                         <Image src={"/MAINLOGO_Horizontal_1200x630.png"} width={1200 * logoSizeRatio} height={630 * logoSizeRatio} />
-                    </a>
+                    {/* </a>
 
-                </Link>
+                </Link> */}
 
 
             </Grid>
             <Grid item xs sm={7} style={{ paddingTop: "30px" }} >
                 <Grid container direction={"row"} justifyContent={"center"} alignItems={"center"} >
                     <Grid item marginRight={"40px"} >
+                        <Link href={"/home"} passHref>
+                            <a href={href} onClick={() => handleClickTab("")}>
 
-                        <Image src={"/Picture/shuriken-12.png"} width={"60px"} height={"60px"} />
+                                <Image src={"/Picture/shuriken-12.png"} width={"60px"} height={"60px"} />
+                            </a>
+
+                        </Link>
                     </Grid>
+
                     {tabsList.map((value, index) => {
                         return (
                             <Grid item xs key={index} >

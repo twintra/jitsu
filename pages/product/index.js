@@ -103,7 +103,7 @@ export default function Product() {
 
             <Grid
                 container
-                style={{ minHeight: '85vh',  paddingLeft: "10%", paddingRight: "10%",  }}
+                style={{ minHeight: '85vh', paddingLeft: "10%", paddingRight: "10%", }}
                 direction="row"
                 alignItems={"center"}
                 justifyContent="center"
@@ -117,8 +117,9 @@ export default function Product() {
 
                 </Grid>
                 <Grid item xs sm={6}>
-                    <Grid container direction="column" alignItems={"center"} justifyContent="center">
-                        <Grid item>
+                    <Grid container direction="column"  alignItems={"center"} justifyContent="center">
+                        <Grid item sx={{paddingBottom:"10px"}}>
+
                             <Grid container direction={"row"} alignItems="center" justifyContent={"center"}>
                                 <Grid item>
                                     <Image src={"/Picture/Decor_Fw_B-12.png"} width={"100px"} height={"100px"} />
@@ -129,23 +130,46 @@ export default function Product() {
                                     </Typography>
                                 </Grid>
                             </Grid>
-                            <Grid container direction={"row"} alignItems="center" justifyContent={"center"}>
-                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
-                                    <Image src={"/Picture/Square_product_FRT-01.png"} width={"150px"} height={"150px"} />
+                        </Grid>
+                        <Grid item sx={{ width: "100%" }}>
+
+                            <Grid container direction={"row"} sx={{ width: "100%" }} alignItems="center" justifyContent={"center"}>
+                                <Grid item xs sm={4}>
+                                    <Grid container justifyContent={"center"}>
+                                        <Image src={"/Picture/Square_product_FRT-01.png"} width={"150px"} height={"150px"} />
+
+                                    </Grid>
                                 </Grid>
-                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
-                                    <Image src={"/Picture/Square_product_BCK-01-01.png"} width={"150px"} height={"150px"} />
+                                <Grid item xs sm={4}>
+                                    <Grid container justifyContent={"center"} sx={{ paddingY: "10px" }}>
+                                        <Image src={"/Picture/Square_product_BCK-01-01.png"} width={"150px"} height={"150px"} />
+                                    </Grid>
+
                                 </Grid>
-                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
-                                    <Image src={"/Picture/Square_product_Inside-01.png"} width={"150px"} height={"150px"} />
+                                <Grid item xs sm={4}>
+                                    <Grid container justifyContent={"center"} sx={{ paddingY: "10px" }}>
+                                        <Image src={"/Picture/Square_product_Inside-01.png"} width={"150px"} height={"150px"} />
+                                    </Grid>
+
                                 </Grid>
                             </Grid>
-                            <Grid container direction={"row"} alignItems="center" justifyContent={"center"}>
-                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
-                                    <Image src={"/Picture/Square_product_LFT-01.png"} width={"150px"} height={"150px"} />
+                        </Grid>
+                        <Grid item sx={{ width: "100%" }}>
+
+
+                            <Grid container direction={"row"} sx={{ width: "100%" }} alignItems="center" justifyContent={"center"}>
+
+                                <Grid item xs sm={4}>
+                                    <Grid container justifyContent={"center"} sx={{ paddingY: "10px" }}>
+                                        <Image src={"/Picture/Square_product_LFT-01.png"} width={"150px"} height={"150px"} />
+                                    </Grid>
+
                                 </Grid>
-                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
-                                    <Image src={"/Picture/Square_product_RGT-01.png"} width={"150px"} height={"150px"} />
+                                <Grid item xs sm={4}>
+                                    <Grid container justifyContent={"center"} sx={{ paddingY: "10px" }}>
+                                        <Image src={"/Picture/Square_product_RGT-01.png"} width={"150px"} height={"150px"} />
+                                    </Grid>
+
                                 </Grid>
                             </Grid>
 
