@@ -60,6 +60,7 @@ export default function Appbar({ children }) {
                                             },
 
                                             borderBottom: value === tab ? 3 : 0,
+                                            borderColor: "#9E4A40",
                                             alignItems: "center",
                                             justifyContent: "center",
                                             paddingBottom: "10px",
@@ -74,7 +75,7 @@ export default function Appbar({ children }) {
                                         <Grid container justifyContent={"center"}  >
 
 
-                                            <Typography display="inline" fontFamily="Zen+Antique">
+                                            <Typography display="inline" fontFamily="K2D">
                                                 {tabsListName[index]}
 
                                             </Typography>
@@ -104,7 +105,7 @@ export default function Appbar({ children }) {
                                 }}
                             >
                                 <Grid container alignItems={"center"} justifyContent="center">
-                                    <Typography fontFamily="Zen+Antique" color={"#E5E9E7"} >
+                                    <Typography fontFamily="K2D" color={"#E5E9E7"} >
 
                                         ORDER
                                     </Typography>

@@ -20,7 +20,7 @@ export default function About() {
                                 Picture here
                             </Grid>
                             <Box width={"100%"}>
-                                <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="Zen+Antique" fontWeight={500}>
+                                <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="K2D" fontWeight={500}>
 
                                     แบรนด์ &quot;จิตสุ&quot; ได้ก่อตั้งขึ้นมาเนื่องจากได้
                                     พบปัญหาความประมาทที่อยู่ในจิตใจหรือความคิด
@@ -51,7 +51,7 @@ export default function About() {
 
                             <Grid item sm={8}>
                                 <Box marginBottom={"5vh"}>
-                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="Zen+Antique" fontWeight={500}>
+                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="K2D" fontWeight={500}>
 
 
                                         อัตลักษณ์ของแบรนด์ได้รับแรงบันดาลใจ
@@ -67,7 +67,7 @@ export default function About() {
                                     </Typography>
                                 </Box>
                                 <Box width={"100%"}>
-                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="Zen+Antique" fontWeight={500}>
+                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="K2D" fontWeight={500}>
                                         แต่ทว่านินจานั้นก็เป็นคนธรรมดาที่มีการเป็น
                                         อยู่แบบคนปกติเพียงแต่มีการฝึกฝนทั้งกายและ
                                         จิตใจให้พร้อมกับสถานการณ์ต่างๆ ที่อาจเกิดขึ้น

@@ -16,10 +16,10 @@ export default function JoinUS() {
                 justifyContent="center"
                 style={{ minHeight: '85vh' }}
             >
-                <Typography sx={{ whiteSpace: 'pre-line', marginBottom: "0px" }} fontFamily="Zen+Antique" fontWeight={"Bold"} fontSize="70px" >
+                <Typography sx={{ whiteSpace: 'pre-line', marginBottom: "0px" }} fontFamily="K2D" fontWeight={"Bold"} fontSize="70px" >
                     Join us
                 </Typography>
-                <Typography sx={{ whiteSpace: 'pre-line', marginBottom: "60px" }} fontFamily="Zen+Antique" fontWeight={"medium"} fontSize="25px" >
+                <Typography sx={{ whiteSpace: 'pre-line', marginBottom: "60px" }} fontFamily="K2D" fontWeight={"medium"} fontSize="25px" >
                     Register or Sign In
                 </Typography>
 
@@ -40,7 +40,7 @@ export default function JoinUS() {
 
                     <Grid container direction={"row"}>
                         <Grid item sm={2}>
-                            <Typography sx={{ fontSize: 20, fontWeight: "medium", color: "#E5E9E7" }} fontFamily="Zen+Antique"  >
+                            <Typography sx={{ fontSize: 20, fontWeight: "medium", color: "#E5E9E7" }} fontFamily="K2D"  >
 
                                 Email:
                             </Typography>
@@ -54,7 +54,7 @@ export default function JoinUS() {
                                 sx={{
                                     input: {
                                         color:'#E5E9E7',
-                                        fontFamily:"Zen+Antique"
+                                        fontFamily:"K2D"
                                     }
                                 }}
 

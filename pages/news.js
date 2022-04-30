@@ -19,19 +19,19 @@ export default function News() {
                         <Grid item style={{ marginLeft: "20px" }}>
                             <Grid container direction="column">
                                 <Grid item xs style={{marginBottom:"2px"}}>
-                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="Zen+Antique" fontSize={"26px"} fontWeight={"Bold"}>
+                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="K2D" fontSize={"26px"} fontWeight={"Bold"}>
                                         {value.title.en}
 
                                     </Typography>
                                 </Grid>
                                 <Grid item xs style={{marginBottom:"4px"}}>
-                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="Zen+Antique" fontWeight={500} color={"#3A685D"} >
+                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="K2D" fontWeight={500} color={"#3A685D"} >
                                         {value.date}
 
                                     </Typography>
                                 </Grid>
                                 <Grid item xs>
-                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="Zen+Antique" fontWeight={500}>
+                                    <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="K2D" fontWeight={500}>
                                         {value.description.en}
 
                                     </Typography>

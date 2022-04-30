@@ -18,13 +18,13 @@ export default function Product() {
 
                             <Grid container direction={"column"} >
                                 <Grid item>
-                                    <Typography fontFamily="Zen+Antique" sx={{ zIndex: 10, position: "absolute" }}>
+                                    <Typography fontFamily="K2D" sx={{ zIndex: 10, position: "absolute" }}>
                                         <IconButton sx={{ backgroundColor: "#E5E9E7" }}>
 
                                             <FavoriteIcon sx={{ color: "#923F38" }} />
                                         </IconButton>
                                     </Typography>
-                                    <Typography fontFamily="Zen+Antique" sx={{ zIndex: 0 }}>
+                                    <Typography fontFamily="K2D" sx={{ zIndex: 0 }}>
 
                                     </Typography>
                                     Bag Picture
@@ -61,7 +61,7 @@ export default function Product() {
                                                     fontWeight: "bold",
                                                     fontSize: 15
                                                 }}
-                                                fontFamily="Zen+Antique"
+                                                fontFamily="K2D"
                                             >
                                                 Order now
                                             </Typography>
@@ -117,7 +117,7 @@ export default function Product() {
                 }} >
                     <Grid container alignItems="center" justifyContent="center" >
 
-                        <Typography sx={{ fontSize: 20, fontWeight: "bold" }} fontFamily="Zen+Antique">
+                        <Typography sx={{ fontSize: 20, fontWeight: "bold" }} fontFamily="K2D">
 
                             PRODUCT
                         </Typography>

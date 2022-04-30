@@ -18,7 +18,7 @@ export default function Home() {
                     <Grid container direction="column" alignItems="center" justifyContent="center" justify="center" height="100%" sx={{ height: "100%" }}>
 
                         <Typography
-                            fontFamily="Zen+Antique"
+                            fontFamily="K2D"
                             sx={{
                                 // textDecoration: 'underline',
                                 color: "#252629",
@@ -43,7 +43,7 @@ export default function Home() {
                                 }}
                             >
                                 <Typography
-                                    fontFamily="Zen+Antique"
+                                    fontFamily="K2D"
                                     sx={{
                                         // textDecoration: 'underline',
                                         // color: "#E5E9E8",

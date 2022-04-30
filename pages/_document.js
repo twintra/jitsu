@@ -4,13 +4,12 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <title>Jitsu</title>
+                <title>
+                    Jitsu
+                </title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap"
-                    rel="stylesheet"
-                />
+                <link href="https://fonts.googleapis.com/css2?family=K2D:wght@500&display=swap" rel="stylesheet" />
 
             </Head>
             <body>
