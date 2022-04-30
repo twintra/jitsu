@@ -9,7 +9,9 @@ import { borderBottom, Box, useTheme } from '@mui/system';
 
 export default function Appbar({ children }) {
     const href = useRouter().pathname;
-    const currentTab = href.split("/")[1];
+    const hrefList = href.split("/")
+    const currentTab = hrefList[hrefList.length-1];
+    
     const logoSizeRatio = 0.2;
     const tabsList = ["about", "product", "news", "join_us"];
     const tabsListName = ["About", "Product", "News", "Join Us"];
@@ -44,11 +46,15 @@ export default function Appbar({ children }) {
 
             </Grid>
             <Grid item xs sm={7} style={{ paddingTop: "30px" }} >
-                <Grid container justifyContent={"center"}  >
+                <Grid container direction={"row"} justifyContent={"center"} alignItems={"center"} >
+                    <Grid item marginRight={"40px"} >
+
+                        <Image src={"/Picture/shuriken-12.png"} width={"60px"} height={"60px"} />
+                    </Grid>
                     {tabsList.map((value, index) => {
                         return (
                             <Grid item xs key={index} >
-                                <Link  href={`/${value}`} passHref >
+                                <Link href={`/${value}`} passHref >
                                     <Grid
                                         style={{ paddingTop: "5px" }}
                                         item
@@ -59,7 +65,7 @@ export default function Appbar({ children }) {
                                                 cursor: "pointer"
                                             },
 
-                                            borderBottom: value === tab ? 3 : 0,
+                                            borderBottom: value === tab ? 5 : 0,
                                             borderColor: "#9E4A40",
                                             alignItems: "center",
                                             justifyContent: "center",
@@ -89,9 +95,9 @@ export default function Appbar({ children }) {
                         )
                     })}
                     <Grid item xs justifyContent={"center"} >
-                        <Link href={`/product`} passHref >
+                        <Link href={`/product/detail`} passHref >
                             <Box
-                                onClick={() => handleClickTab("product")}
+                                onClick={() => handleClickTab("")}
                                 sx={{
                                     pt: "5px",
                                     pb: "5px",
@@ -101,7 +107,7 @@ export default function Appbar({ children }) {
                                     ":hover": {
                                         cursor: "pointer"
                                     },
-                                    bgcolor: "#A9937C",
+                                    bgcolor: "#252629",
                                 }}
                             >
                                 <Grid container alignItems={"center"} justifyContent="center">
@@ -121,7 +127,7 @@ export default function Appbar({ children }) {
                             </Box>
 
                         </Link>
-                        <Box sx={{
+                        {/* <Box sx={{
 
 
 
@@ -135,7 +141,7 @@ export default function Appbar({ children }) {
 
                             <Image src={"/assets/shopping-basket.png"} width={30} height={30} />
 
-                        </Box>
+                        </Box> */}
 
                     </Grid>
 
@@ -150,7 +156,7 @@ export default function Appbar({ children }) {
                                     }}
                                     onClick={() => { console.log("th") }}
                                 >
-                                    TH
+
                                 </Typography>
                             </Grid>
                             <Divider orientation='vertical' flexItem sx={{ borderRightWidth: 2, background: "#6F6F6F" }} />
@@ -163,7 +169,7 @@ export default function Appbar({ children }) {
                                     }}
                                     onClick={() => { console.log("en") }}
                                 >
-                                    EN
+
                                 </Typography>
                             </Grid>
 

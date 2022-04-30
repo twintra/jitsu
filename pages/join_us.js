@@ -22,50 +22,61 @@ export default function JoinUS() {
                 <Typography sx={{ whiteSpace: 'pre-line', marginBottom: "60px" }} fontFamily="K2D" fontWeight={"medium"} fontSize="25px" >
                     Register or Sign In
                 </Typography>
+                <Grid item >
 
+                    <Grid container direction={"row"} alignItems="center" justifyContent={"end"}   >
+                        <Grid item sx={{marginX:"100px"}}>
 
-                <Box sx={{
-                    // maxWidth: "200px",
-                    width: "500px",
-                    padding: "15px",
-                    paddingRight: "30px",
-                    paddingLeft: "30px",
-                    borderRadius: 4,
-                    ":hover": {
-                        cursor: "pointer"
-                    },
-                    bgcolor: "#3A685D",
-
-                }} >
-
-                    <Grid container direction={"row"}>
-                        <Grid item sm={2}>
-                            <Typography sx={{ fontSize: 20, fontWeight: "medium", color: "#E5E9E7" }} fontFamily="K2D"  >
-
-                                Email:
-                            </Typography>
-                        </Grid>
-                        <Grid item sm={10}>
-                            <TextField
+                            <Box sx={{
+                                // maxWidth: "200px",
+                                width: "500px",
                                 
-                                style={{ width: "100%" }}
-                                variant='standard'
-                                InputProps={{ disableUnderline: true, }}
-                                sx={{
-                                    input: {
-                                        color:'#E5E9E7',
-                                        fontFamily:"K2D"
-                                    }
-                                }}
+                                padding: "15px",
+                                paddingRight: "30px",
+                                paddingLeft: "30px",
+                                borderRadius: 4,
+                                ":hover": {
+                                    cursor: "pointer"
+                                },
+                                bgcolor: "#3A685D",
 
-                            />
+                            }} >
+
+                                <Grid container direction={"row"}>
+                                    <Grid item sm={2}>
+                                        <Typography sx={{ fontSize: 20, fontWeight: "medium", color: "#E5E9E7" }} fontFamily="K2D"  >
+
+                                            Email:
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item sm={10}>
+                                        <TextField
+
+                                            style={{ width: "100%" }}
+                                            variant='standard'
+                                            InputProps={{ disableUnderline: true, }}
+                                            sx={{
+                                                input: {
+                                                    color: '#E5E9E7',
+                                                    fontFamily: "K2D"
+                                                }
+                                            }}
+
+                                        />
+                                    </Grid>
+
+
+
+                                </Grid>
+
+                            </Box>
                         </Grid>
+                        <Grid item zIndex={10} sx={{position:"absolute",transform:"rotate(-30deg)"}} >
 
-
-
+                            <Image src={"/Picture/Decor_Fw_G-12.png"} width={"200px"} height={"200px"} />
+                        </Grid>
                     </Grid>
-
-                </Box>
+                </Grid>
 
             </Grid>
         </Fade>

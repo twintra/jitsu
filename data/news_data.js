@@ -18,36 +18,36 @@ const news_items = [
             "th": ""
         },
         date: "23 March 2022",
-        image_path: "/news_image/news_1.jpeg"
+        image_path: "/news_image/144_thumbnail_4.jpg"
     },
-    {
-        id: "002",
-        title: {
-            "en": "Bus stop poster be arrival now",
-            "th": ""
+    // {
+    //     id: "002",
+    //     title: {
+    //         "en": "Bus stop poster be arrival now",
+    //         "th": ""
 
-        },
-        description: {
-            "en": "",
-            "th": ""
-        },
-        date: "23 March 2022",
-        image_path: "/news_image/news_2.jpeg"
-    },
-    {
-        id: "003",
-        title: {
-            "en": "Bus stop poster be arrival now",
-            "th": ""
+    //     },
+    //     description: {
+    //         "en": "",
+    //         "th": ""
+    //     },
+    //     date: "23 March 2022",
+    //     image_path: "/news_image/news_2.jpeg"
+    // },
+    // {
+    //     id: "003",
+    //     title: {
+    //         "en": "Bus stop poster be arrival now",
+    //         "th": ""
 
-        },
-        description: {
-            "en": "",
-            "th": ""
-        },
-        date: "23 March 2022",
-        image_path: ""
-    },
+    //     },
+    //     description: {
+    //         "en": "",
+    //         "th": ""
+    //     },
+    //     date: "23 March 2022",
+    //     image_path: ""
+    // },
     
     
 

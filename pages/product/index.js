@@ -4,6 +4,7 @@ import Head from 'next/head'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import bag_data from '../../data/bag_data'
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 export default function Product() {
@@ -102,13 +103,57 @@ export default function Product() {
 
             <Grid
                 container
-                style={{ minHeight: '85vh', paddingTop: "50px", paddingLeft: "10%", paddingRight: "10%" }}
-                direction="column"
-
+                style={{ minHeight: '85vh',  paddingLeft: "10%", paddingRight: "10%",  }}
+                direction="row"
+                alignItems={"center"}
                 justifyContent="center"
 
             >
-                <Box sx={{
+                <Grid item xs sm={6}>
+                    <Grid container alignItems={"center"} justifyContent="center">
+                        <Image src={"/Picture/Square_product_1-12.png"} width={"400px"} height={"400px"} />
+
+                    </Grid>
+
+                </Grid>
+                <Grid item xs sm={6}>
+                    <Grid container direction="column" alignItems={"center"} justifyContent="center">
+                        <Grid item>
+                            <Grid container direction={"row"} alignItems="center" justifyContent={"center"}>
+                                <Grid item>
+                                    <Image src={"/Picture/Decor_Fw_B-12.png"} width={"100px"} height={"100px"} />
+                                </Grid>
+                                <Grid item>
+                                    <Typography fontFamily={"K2D"} fontSize="32px">
+                                        Product Detail
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Grid container direction={"row"} alignItems="center" justifyContent={"center"}>
+                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
+                                    <Image src={"/Picture/Square_product_FRT-01.png"} width={"150px"} height={"150px"} />
+                                </Grid>
+                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
+                                    <Image src={"/Picture/Square_product_BCK-01-01.png"} width={"150px"} height={"150px"} />
+                                </Grid>
+                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
+                                    <Image src={"/Picture/Square_product_Inside-01.png"} width={"150px"} height={"150px"} />
+                                </Grid>
+                            </Grid>
+                            <Grid container direction={"row"} alignItems="center" justifyContent={"center"}>
+                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
+                                    <Image src={"/Picture/Square_product_LFT-01.png"} width={"150px"} height={"150px"} />
+                                </Grid>
+                                <Grid item sx={{paddingX:"5px", paddingY:"10px"}}>
+                                    <Image src={"/Picture/Square_product_RGT-01.png"} width={"150px"} height={"150px"} />
+                                </Grid>
+                            </Grid>
+
+                        </Grid>
+                    </Grid>
+
+                </Grid>
+                {/* <Box sx={{
                     maxWidth: "140px",
                     padding: "10px",
                     borderRadius: 20,
@@ -127,7 +172,7 @@ export default function Product() {
 
                     {createItemList()}
 
-                </Grid>
+                </Grid> */}
 
             </Grid>
         </Fade>
