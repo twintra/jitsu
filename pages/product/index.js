@@ -109,30 +109,35 @@ export default function Product() {
                 justifyContent="center"
 
             >
-                <Grid item sm={6}>
-                    <Grid container alignItems={"center"} justifyContent="center">
-                        <Image src={"/Picture/Square_product_1-12.png"} width={"400px"} height={"400px"} />
+                <Grid item sm={6} sx={{ height:"100%", }}>
+                    <Grid container alignItems={"center"} justifyContent="center" sx={{height:"100%"}}>
+                        <Grid item sx={{width:"75%"}}>
+
+                            <Image src={"/Picture/Square_product_1-12.png"} layout="responsive" width={"500px"} height={"500px"} />
+                        </Grid>
+
+
 
                     </Grid>
 
                 </Grid>
-                <Grid item sm={6} sx={{  width: "100%" }}>
-                    <Grid container direction="column" sx={{  width: "100%" }} alignItems={"center"} justifyContent="center">
-                        <Grid item>
+                <Grid item sm={6} sx={{ width: "100%", height:"100%", paddingBottom:"4%"}}>
+                    <Grid container direction="column" sx={{ width: "100%", height:"100%", }} alignItems={"center"} justifyContent="center">
+                        <Grid item >
                             <Grid container direction={"row"} alignItems="center" justifyContent={"center"}>
                                 <Grid item>
                                     <Image src={"/Picture/Decor_Fw_B-12.png"} width={"100px"} height={"100px"} />
                                 </Grid>
                                 <Grid item>
                                     <Typography fontFamily={"K2D"} fontSize="32px">
-                                        Product Detail
+                                        PRODUCT DETAIL
                                     </Typography>
                                 </Grid>
                             </Grid>
                         </Grid>
                         <Grid item sx={{ width: "100%" }}>
 
-                            <Grid container direction={"row"} alignItems="center" justifyContent={"center"} sx={{  width: "100%",  }} >
+                            <Grid container direction={"row"} alignItems="center" justifyContent={"center"} sx={{ paddingX:"30px",width: "100%", }} >
                                 <Grid item sm={4} sx={{ paddingX: "10px", paddingY: "10px", }}>
 
                                     <Image src={"/Picture/Square_product_FRT-01.png"} layout="responsive" width={"300px"} height={"300px"} />
@@ -146,8 +151,8 @@ export default function Product() {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid   item sx={{ width: "100%" }}>
-                            <Grid container direction={"row"} alignItems="center" justifyContent={"center"}>
+                        <Grid item sx={{ width: "100%" }}>
+                            <Grid container direction={"row"} alignItems="center" justifyContent={"center"} sx={{ paddingX:"30px",width: "100%", }} >
                                 <Grid item sm={2} />
                                 <Grid item sm={4} sx={{ paddingX: "10px", paddingY: "10px" }}>
                                     <Image src={"/Picture/Square_product_LFT-01.png"} layout="responsive" width={"300px"} height={"300px"} />
