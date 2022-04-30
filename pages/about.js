@@ -67,7 +67,7 @@ export default function About() {
 
                         <Grid container alignItems="center" justifyContent="center" direction="column" width="50%">
 
-                            <Grid item sm={8}>
+                            <Grid item xs>
                                 <Box marginBottom={"5vh"}>
                                     <Typography sx={{ whiteSpace: 'pre-line' }} fontFamily="K2D" fontWeight={500}>
 
@@ -97,9 +97,7 @@ export default function About() {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid item sm={4}>
-                                Picture here
-                            </Grid>
+                            
 
                         </Grid>
                     </Grid>
