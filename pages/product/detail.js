@@ -227,7 +227,7 @@ const Detail = () => {
                                                     }}
                                                 />}
                                                 label={<Typography fontFamily={"K2D"}>Bank Tranfer</Typography>}
-                                                
+
                                             />
                                             <FormControlLabel
                                                 value={PayMethod.cash}
@@ -245,13 +245,38 @@ const Detail = () => {
                                                         },
                                                     }}
                                                 />}
-                                                
+
                                                 label={<Typography fontFamily={"K2D"}>Cash On Delivery</Typography>}
                                             />
 
                                         </RadioGroup>
                                     </FormControl>
 
+                                </Grid>
+                                <Grid item style={{ width: "100%", marginTop: "50px" }}>
+
+                                    <Grid container direction={"row"} alignItems="end" justifyContent="end" style={{ width: "100%" }} sx={{ width: "100%", }}  >
+                                        <Box sx={{
+                                            maxWidth: "150px",
+                                            paddingY: "2px",
+                                            paddingX: "10px",
+                                            borderRadius: 20,
+                                            ":hover": {
+                                                cursor: "pointer"
+                                            },
+                                            
+                                            bgcolor: "#3A685D",
+
+                                        }} >
+
+
+                                            <Typography fontFamily="K2D" sx={{ fontSize: 20, fontWeight: "bold", color: "#E5E9E7" }}>
+
+                                                Order Confirm
+                                            </Typography>
+
+                                        </Box>
+                                    </Grid>
                                 </Grid>
 
                             </Grid>
