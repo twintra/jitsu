@@ -15,6 +15,7 @@ export default function Layout({ children }) {
                 <title>
                     Jitsu
                 </title>
+                <link rel="icon" href="/logo.png" />
             </Head>
             {showHeader && <Appbar />}
             {children}
