@@ -29,7 +29,7 @@ export default function Footer({ children }) {
 
 
                         <Typography color="#E5E9E8" fontFamily="K2D">
-                            <Link href={"/faq"}>
+                            <Link href={"/faq"} passHref>
 
                                 Jitsu.com
 
@@ -51,7 +51,7 @@ export default function Footer({ children }) {
                             </Typography>
                         </Grid>
                     </Link>
-                    <Link href={"/faq"}>
+                    <Link href={"/faq"} passHref>
                         <Grid container direction="row" sx={{ marginTop: "10px" }}>
                             <Grid item style={{ paddingLeft: "0px", paddingRight: "10px" }}>
 
@@ -83,7 +83,7 @@ export default function Footer({ children }) {
                                 fontWeight: "bold"
                             }}
                         >
-                            <Link href={"/faq"}>
+                            <Link href={"/faq"} passHref>
                                 FAQ
                             </Link>
                         </Typography>
