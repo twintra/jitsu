@@ -101,7 +101,7 @@ export default function Appbar({ children }) {
                         )
                     })}
                     <Grid item xs justifyContent={"center"} >
-                        <Link href={`/product/detail`} passHref >
+                        <Link href={`/product/order`} passHref >
                             <Box
                                 onClick={() => handleClickTab("")}
                                 sx={{
